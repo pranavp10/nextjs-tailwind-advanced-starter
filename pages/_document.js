@@ -7,10 +7,17 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta httpEquiv="ScreenOrientation" content="autoRotate:disabled" />
+          <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+          <link
+            rel="preload"
+            href="/fonts/Inter-roman.latin.var.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <meta content="follow, index" name="robots" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta httpEquiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-          <meta content="follow, index" name="robots" />
           <link href="/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
           <link href="/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
           <link href="/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
