@@ -2,7 +2,7 @@ module.exports = {
   mode: 'jit',
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
+    purgeLayersByDefault: true,
   },
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
@@ -13,4 +13,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
