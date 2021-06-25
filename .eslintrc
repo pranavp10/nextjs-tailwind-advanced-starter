@@ -1,0 +1,61 @@
+{
+  "extends": [
+    "wesbos"
+  ],
+  "rules": {
+    "no-console": 2,
+    "no-sparse-arrays": "off",
+    "react/display-name": "off",
+    "react/jsx-props-no-spreading": 0,
+    "jsx-a11y/label-has-associated-control": "off",
+    "camelcase": "off",
+    "import/no-cycle": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 100,
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "jsxBracketSameLine": true,
+        "semi": true
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "@/components",
+            "./components"
+          ],
+          [
+            "@/styles",
+            "./styles"
+          ],
+          [
+            "@/lib",
+            "./lib"
+          ],
+          [
+            "@/utils",
+            "./utils"
+          ],
+          [
+            "@/config",
+            "./config"
+          ],
+          [
+            "@/hooks",
+            "./hooks"
+          ],
+          [
+            "@/api",
+            "./api"
+          ]
+        ]
+      }
+    }
+  }
+}
